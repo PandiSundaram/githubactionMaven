@@ -23,4 +23,5 @@ jobs:
         with:
           host: https://8ac5-59-89-198-61.ngrok-free.app/
           login: sqp_b37d1f5ca2eb254b795de2c532ad50c647652a62
+          projectBaseDir: "src/"
           projectKey: "mytest"

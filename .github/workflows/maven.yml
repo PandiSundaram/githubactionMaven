@@ -21,6 +21,11 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: |
+        mvn -B package --file pom.xml
+        mvn test
+        mvn jacoco:report
+        mvn sonar:sonar -Dsonar.login=sqa_7697ca25939d415bd0af5c8b8c2e34e543334137
+        
 
 

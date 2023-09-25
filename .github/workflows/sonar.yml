@@ -32,6 +32,6 @@ jobs:
       - name: Build and analyze
         env:
           GITHUB_TOKEN: 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  # Needed to get PR information, if any
-          SONAR_TOKEN: sqp_b37d1f5ca2eb254b795de2c532ad50c647652a62
+          SONAR_TOKEN: sqa_2c2d8f311d43a5bd8dc2201f859fb8a828fc1ddd
           SONAR_HOST_URL: https://8ac5-59-89-198-61.ngrok-free.app/
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar

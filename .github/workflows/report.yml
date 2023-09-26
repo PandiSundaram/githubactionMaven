@@ -28,7 +28,7 @@ jobs:
         run: mvn --batch-mode -Dmaven.test.failure.ignore=true test
 
       - name: Report
-        uses: dorny/test-reporter@v1
+        uses: phoenix-actions/test-reporting@v12
         if: always()
         with:
           name: Maven Tests

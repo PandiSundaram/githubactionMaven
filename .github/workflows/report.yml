@@ -44,3 +44,8 @@ jobs:
         with:
           name: test-report
           path: target/surefire-reports/*.xml
+      - name: Publish Unit Test Results
+        uses: mikepenz/action-junit-report@v3.1.0-b01
+        if: always()
+        with:
+           report_paths: target/surefire-reports/*.xml

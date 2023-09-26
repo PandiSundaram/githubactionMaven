@@ -49,4 +49,4 @@ jobs:
         if: always()
         with:
           files: |
-            target/site/jacoco/jacoco-resources/*.xml
+            target/site/jacoco/jacoco/*.xml

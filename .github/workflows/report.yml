@@ -49,4 +49,4 @@ jobs:
         if: always()
         with:
           files: |
-            target/surefire-reports/*.xml
+            target/site/jacoco/jacoco-resources/*.xml
